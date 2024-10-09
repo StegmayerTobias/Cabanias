@@ -11,7 +11,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Sedan SC", sans-serif;
+  font-family: 'Sedan SC', sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 0;
@@ -26,8 +26,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"],
+ul[role='list'],
+ol[role='list'],
 li {
   list-style: none;
 }
@@ -118,11 +118,11 @@ select {
 
 .navigation {
   display: flex;
+  align-items: center;
   gap: 26px;
-  line-height: 30px;
-  font-size: clamp(1rem, 4vw, 1.25rem);
   text-transform: uppercase;
   text-wrap: nowrap;
+  font-size: clamp(16px, 12vw, 48px);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
