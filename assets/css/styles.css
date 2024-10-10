@@ -11,7 +11,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Sedan SC', sans-serif;
+  font-family: 'Sedan', sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 0;
@@ -75,7 +75,7 @@ select {
   font: inherit;
 }
 
-.header {
+header {
   background-color: var(--primario);
   height: 85px;
   display: flex;
@@ -94,21 +94,23 @@ select {
 
 .container__imgLogo {
   width: 110px;
-  height: 105px;
+  height: 110px;
   background-color: var(--primario);
-  border-radius: 70px;
+  border-radius: 50%;
   display: flex;
 
   align-items: center;
-  padding: 4px;
-  /* position: relative;
-  top: 5px; */
+  padding: 10px;
+  position: relative;
+  top: 5px;
+  z-index: 1;
 }
 
 .img__logo {
   width: 90px;
   position: relative;
   top: 5px;
+  filter: invert(100%) brightness(200%);
 }
 
 .titulo__logo {
@@ -123,6 +125,62 @@ select {
   text-transform: uppercase;
   text-wrap: nowrap;
   font-size: clamp(16px, 12vw, 48px);
+}
+
+.footer__firstPart {
+  display: flex;
+  align-items: center;
+  height: 239px;
+  background-color: var(--primario);
+  justify-content: space-between;
+  padding: 0 73px;
+}
+
+.footer__contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialMedia__links {
+  display: flex;
+  gap: 16px;
+}
+.socialMedia__links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-100);
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+}
+.footer__contacto p {
+  font-size: 21px;
+  color: var(--grey-100);
+}
+.contacto__links {
+  color: var(--grey-100);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.contacto__links li,
+.contacto__links a {
+  font-size: 18px;
+}
+
+.footer__secondPart {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.footer__secondPart img {
+  width: 176px;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
