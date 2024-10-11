@@ -11,9 +11,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Sedan', sans-serif;
+  font-family: "Sedan", sans-serif;
   font-weight: 400;
   font-style: normal;
+
   padding: 0;
   margin: 0;
 }
@@ -26,8 +27,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'],
+ul[role="list"],
+ol[role="list"],
 li {
   list-style: none;
 }
@@ -116,6 +117,7 @@ header {
 .titulo__logo {
   font-size: 32px;
   text-wrap: nowrap;
+  font-family: "Sedan SC", sans-serif;
 }
 
 .navigation {
@@ -181,6 +183,21 @@ header {
 
 .footer__secondPart img {
   width: 176px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b6b5b5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primario);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(172, 70, 70);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

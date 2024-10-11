@@ -1,0 +1,72 @@
+.section__img {
+  background-image: url(../images/familiaDeToros.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 288px;
+  display: flex;
+  align-items: end;
+  justify-content: baseline;
+  padding: 50px 80px;
+}
+
+.quote {
+  padding-left: 30px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  height: 65px;
+  border-left: 8px solid var(--grey-100);
+}
+.quote h1 {
+  color: var(--grey-100);
+  font-size: 4rem;
+}
+
+.torosPadres__section {
+  padding-block: 70px;
+  width: calc(100% - 11rem);
+  margin-inline: auto;
+  display: grid;
+  gap: 40px;
+}
+
+.quoteBlack {
+  padding-left: 30px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  height: 65px;
+  border-left: 8px solid var(--text);
+}
+
+.quoteBlack h2 {
+  font-size: 4rem;
+}
+
+.torosPadres__section ul {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.torosPadres__section ul li {
+  font-family: "Sedan SC", sans-serif;
+  border: 5px solid var(--primario);
+  border-radius: 40px;
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+}
