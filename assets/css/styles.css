@@ -197,7 +197,7 @@ header {
   background: var(--primario);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(172, 70, 70);
+  background: rgb(146, 60, 60);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

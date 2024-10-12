@@ -37,9 +37,9 @@
         <ul class="navigation">
           <li><a href="">Inicio</a></li>
           <li><a href="../pages/genetica.html">Genética</a></li>
-          <li><a href="">Remates</a></li>
-          <li><a href="">Sobre Nosotros</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a href="../pages/remates.html">Remates</a></li>
+          <li><a href="#sobreNosotros">Sobre Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -191,7 +191,7 @@
           </div>
           <div class="wrapped">
             <article>
-              <section class="aboutUsSection">
+              <section class="aboutUsSection" id="sobreNostros">
                 <h3>Nombre Cabaña</h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -249,33 +249,7 @@
             </div>
           </div>
           <div class="wrapped">
-            <section class="team__grid">
-              <div class="team__card">
-                <img
-                  src="..//assets/images/Image-placeholder-empty.png"
-                  alt="Integrante del equipo" />
-              </div>
-              <div class="team__card">
-                <img
-                  src="..//assets/images/Image-placeholder-empty.png"
-                  alt="Integrante del equipo" />
-              </div>
-              <div class="team__card">
-                <img
-                  src="..//assets/images/Image-placeholder-empty.png"
-                  alt="Integrante del equipo" />
-              </div>
-              <div class="team__card">
-                <img
-                  src="..//assets/images/Image-placeholder-empty.png"
-                  alt="Integrante del equipo" />
-              </div>
-              <div class="team__card">
-                <img
-                  src="..//assets/images/Image-placeholder-empty.png"
-                  alt="Integrante del equipo" />
-              </div>
-            </section>
+            <section class="team__grid" id="team__grid"></section>
           </div>
         </div>
       </div>
@@ -288,7 +262,7 @@
             <a href="mailto:hola@gmail.com" target="_blank">hola@gmail.com</a>
           </li>
         </ul>
-        <div class="footer__contacto">
+        <div class="footer__contacto" id="contacto">
           <p>Contacto</p>
           <ul class="socialMedia__links">
             <li>
@@ -357,5 +331,18 @@
           alt="Logo de Almboy" />
       </div>
     </footer>
+
+    <script>
+      const teamCardCount = 5;
+      const team__grid = document.getElementById("team__grid");
+
+      for (let i = 0; i < teamCardCount; i++) {
+        team__grid.innerHTML += `
+          <div class="team__card">
+            <img src="../assets/images/Image-placeholder-empty.png" alt="Integrante del equipo" />
+          </div>
+        `;
+      }
+    </script>
   </body>
 </html>
