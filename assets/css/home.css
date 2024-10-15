@@ -1,5 +1,5 @@
 .heroSection {
-  background-image: url("../images/RANCHO_BRF_466_Principal.png");
+  background-image: url('../images/RANCHO_BRF_466_Principal.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,14 +30,15 @@
 }
 
 .heroSection__title h1 {
-  font-size: 40px;
+  font-size: clamp(24px, 4vw, 40px);
   text-align: center;
   text-transform: lowercase;
+  text-wrap: nowrap;
 }
 
 .floatingList {
   position: absolute;
-  top: 167px;
+  top: 60px;
   left: 10px;
   width: 50px;
   height: auto;
@@ -60,7 +61,7 @@
 }
 
 .floatingList li::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 40px;
   height: 40px;
@@ -103,9 +104,9 @@
 
 .hero__firstBlock blockquote {
   border-left: 8px solid var(--grey-100);
-  width: 275px;
+  max-width: 275px;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   padding: 6px 0 6px 10px;
 
   color: var(--grey-100);
@@ -123,16 +124,18 @@
 
 .hero__secondBlock h2 {
   color: var(--grey-100);
-  font-size: 40px;
+  font-size: clamp(26px, 4vw, 40px);
   line-height: 1.5;
-  font-family: "Sedan SC", sans-serif;
+  font-family: 'Sedan SC', sans-serif;
+  text-wrap: nowrap;
 }
 
 .hero__secondBlock p {
   color: var(--grey-100);
-  font-size: 26px;
+  font-size: clamp(16px, 3vw, 26px);
   line-height: 1.5;
-  font-family: "Sedan SC", sans-serif;
+  font-family: 'Sedan SC', sans-serif;
+  text-wrap: nowrap;
 }
 
 .hero__thirdBlock {
@@ -215,7 +218,7 @@ article h3 {
   font-size: 40px;
   text-align: center;
   color: var(--text);
-  font-family: "Sedan SC", sans-serif;
+  font-family: 'Sedan SC', sans-serif;
 }
 
 article p {
